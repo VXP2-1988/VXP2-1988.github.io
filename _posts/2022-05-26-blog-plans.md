@@ -5,13 +5,13 @@ date:   2022-05-26 17:05
 categories: 
 tags: meta
 ---
+Overall I'm fairly pleased with Jekyll. It was easy to setup and I like the markdown support for easy editing. I'd like to craft a mission statement to guide the rest of this summer. I'm more effective when I have a goal to focus on.
+
 Finished setting up the blog, it's 17:00 now. Have basic navigation and tag system. I'd like to do a few things to improve it:
 
 * Category system?
-* Display page titles when clicking on post.
+* <s>Display page titles when clicking on post.</s>
 * Better About page.
 * Better navbar.
 * All tags overview page, linked to navbar.
-* Add some images.
-
-Overall I'm fairly pleased with Jekyll. It was easy to setup and I like the markdown support for easy editing. I'd like to craft a mission statement to guide the rest of this summer. I'm more effective when I have a goal to focus on.
+* <s>Add some images.</s>

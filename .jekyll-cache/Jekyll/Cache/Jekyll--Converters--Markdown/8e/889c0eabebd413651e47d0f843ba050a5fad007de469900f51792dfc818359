@@ -1,0 +1,15 @@
+I"x<p>Overall I’m fairly pleased with Jekyll. It was easy to setup and I like the markdown support for easy editing. I’d like to craft a mission statement to guide the rest of this summer. I’m more effective when I have a goal to focus on.</p>
+
+<p>Finished setting up the blog, it’s 17:00 now. Have basic navigation and tag system. I’d like to do a few things to improve it:</p>
+
+<ul>
+  <li>Category system?</li>
+  <li>
+    <s>Display page titles when clicking on post.</s>
+  </li>
+  <li>Better About page.</li>
+  <li>Better navbar.</li>
+  <li>All tags overview page, linked to navbar.</li>
+  <li>Add some images.</li>
+</ul>
+:ET
