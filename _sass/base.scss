@@ -30,7 +30,6 @@ footer { color: var(--text-color);  border-top: var(--border);  margin: 20px aut
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { margin-bottom: 20px; }
-header pre {margin: 0px; padding: 0px; font-size: 0.58vw; text-align: center; line-height: 0px; }
 
 /**
  * Highlight/Markup
@@ -132,3 +131,5 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+header pre {margin: 0px; padding: 0px; font-size: 0.58vw; text-align: center; line-height: normal !important;}
