@@ -6,9 +6,9 @@ header_pages:
  - index.md
  - about.md
 
-footer: '<a href="https://twitter.com/loganchovy">twitter</a> <a href="https://github.com/loganagol">github</a>'
+footer: '<a href="https://twitter.com/loganchovy">twitter</a> <a href="https://github.com/loganagol">github</a> <a href="https://tryhackme.com/p/sokay">tryhackme</a>'
 
-style: light # dark (default) or light
+style: dark # dark (default) or light
 # listen_for_clients_preferred_style: true # true or false (default)
 
 plugins:
