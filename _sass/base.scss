@@ -40,9 +40,9 @@ footer { margin-bottom: 20px; }
 /**
  * Lists
  */
-:not(.menu) > ul { list-style: none;  padding-left: 0; }
-:not(.menu) > ul { list-style-type: none; }
-:not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+:not(.menu) > ul { list-style: none; padding-left: 11px; }
+:not(.menu) > ul { list-style-type: square; }
+// :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
 
 /**
  * Header/Navigation
@@ -132,4 +132,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
 
-header pre {margin: 0px; padding: 0px; font-size: 0.58vw; text-align: center; line-height: normal !important;}
+header pre {margin: 0px; padding: 0px; font-size: 10px; text-align: center; line-height: normal !important;}
+@media screen and (max-width: 600px) {
+    header pre{font-size: 5px;}
+}

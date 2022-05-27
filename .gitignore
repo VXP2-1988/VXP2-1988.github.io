@@ -5,3 +5,4 @@ _site
 Gemfile.lock
 tagtemplate.md
 YYYY-MM-DD-title.md
+.vscode
