@@ -6,3 +6,6 @@ Gemfile.lock
 tagtemplate.md
 YYYY-MM-DD-title.md
 .vscode
+.jekyll-cache
+.jekyll-metadata
+vendor

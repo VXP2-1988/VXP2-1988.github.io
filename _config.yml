@@ -9,7 +9,7 @@ header_pages:
  - projects.md
 
 footer: 
-  '<a href="https://twitter.com/loganchovy">twitter</a> <a href="https://github.com/loganagol">github</a> <a href="https://tryhackme.com/p/sokay">tryhackme</a> <br/><br/> <p>powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/b2a3e8/jekyll-theme-console">jekyll-theme-console</a></p>'
+  '<a href="https://twitter.com/loganchovy">Twitter</a> <a href="https://github.com/loganagol">GitHub</a> <a href="https://tryhackme.com/p/sokay">TryHackMe</a> <br/><br/> <p>powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/b2a3e8/jekyll-theme-console">jekyll-theme-console</a></p>'
 
 style: dark # dark (default) or light
 # listen_for_clients_preferred_style: true # true or false (default)
