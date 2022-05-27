@@ -1,3 +1,30 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Logan's Page
+description: >- # this means to ignore newlines until "baseurl:"
+  General programming, web dev, security, and personal topics. This site is 
+  intended to track my independent learning.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 # Example Site settings
 
 #google_analytics: UA-NNNNNNNN-N
@@ -9,7 +36,7 @@ header_pages:
  - projects.md
 
 footer: 
-  '<a href="https://twitter.com/loganchovy">Twitter</a> <a href="https://github.com/loganagol">GitHub</a> <a href="https://tryhackme.com/p/sokay">TryHackMe</a> <br/><br/> <p>powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/b2a3e8/jekyll-theme-console">jekyll-theme-console</a></p>'
+  '<a href="https://twitter.com/loganchovy">twitter</a> <a href="https://github.com/loganagol">github</a> <a href="https://tryhackme.com/p/sokay">tryhackme</a> <br/> <p>powered by <a href="https://jekyllrb.com/">jekyll</a> and <a href="https://github.com/b2a3e8/jekyll-theme-console">jekyll-theme-console</a></p>'
 
 style: dark # dark (default) or light
 # listen_for_clients_preferred_style: true # true or false (default)
