@@ -25,11 +25,27 @@ First decision is the front-end framework. This will be my first real project us
 Next up is the choice between static generated site or server-side ren. [This](https://www.smashingmagazine.com/2020/07/differences-static-generated-sites-server-side-rendered-apps/) article was helpful when researching the differences between statically generating and rendering an app on a server. Since this site will be doing potentially much more than serving some static pages, SSG is out. After reading [this](https://vuejs.org/guide/scaling-up/ssr.html) article on SSR, I've elected to pursue a single page application (SPA) with a backend API. The SEO problem with SPA isn't an issue, since this site will only be used internally. Plus, using an SPA  will give me flexibility to try out different backends during the learning process.
 
 #### Backend
-This may take a little longer to decide. I have experience using Flask and Heroku, but their free tiers aren't very reliable. 
+~~This may take a little longer to decide. I have experience using Flask and Heroku, but their free tiers aren't very reliable.~~ 
 
-Leaning towards Amazon EC2 for now, since that will give me experience setting up a bare-bones server. I could always start off using the Heroku I'm familiar with and then switch to something else later. Firebase is another good option that would eliminate the need for separate backend and hosting. Self-hosted is also an option. 
+~~Leaning towards Amazon EC2 for now, since that will give me experience setting up a bare-bones server. I could always start off using the Heroku I'm familiar with and then switch to something else later. Firebase is another good option that would eliminate the need for separate backend and hosting. Self-hosted is also an option.~~
 
+On further research, EC2 may be biting off more than I can chew for the initial portion of this project. I would need to manage updating, load balancing, and all the other resposibilities of a virtual instance. This is on top of learning Vue, setting up authentication, and linking the backend.
+
+Helpful references:
+[Heroku vs AWS 1](https://www.qovery.com/blog/heroku-vs-aws-what-to-choose-as-a-startup)
+[Heroku vs AWS 2](https://www.guru99.com/heroku-vs-aws.html)
+[Cloud Computing Models](https://aws.amazon.com/types-of-cloud-computing/)
+[Deploy a Flask App in AWS EC2](https://www.twilio.com/blog/deploy-flask-python-app-aws)
+
+TL;DR: 
+Heroku is Platform as a Service. It abstracts away the details of the implementation and provides streamlined scaling, implementation, and deployment. Cons are more expense the bigger the scale and lack of control over the underlying infrastructure.
+
+AWS EC2 provides a virtual server as part of the Infrastructure as a Service Model. This provides fine-grained control over implementation, at the cost of more complicated deployment and maintenance. It's more cost effective at larger scales.
+
+For now, I'll focus on using Heroku, Flask, and Vue. Once that's up and working I can explore other options.
 ### Next Steps
+[Flask and Vue SPA](https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/)
+
 1. Create Vue Application
 2. Publish to internet
 3. Link to backend
