@@ -1,16 +1,15 @@
 ---
 layout: default
 ---
-<ul>
-    {% for tag_hash in site.tags %}
-        {% assign my_tag = tag_hash[0] %}
-        <li><strong>{{ my_tag }}</strong></li>
-        <ul>
-            {% for post in site.tags[my_tag] %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-                    {{ post.description }}
-                </li>
-            {% endfor %}
-        </ul>
-    {% endfor %}
-</ul>
+
+{% for tag_hash in site.tags %}
+    {% assign my_tag = tag_hash[0] %}
+    <strong><a href="../tag/{{ my_tag }}">{{ my_tag }}</a></strong>
+    <ul>
+        {% for post in site.tags[my_tag] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+                {{ post.description }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
