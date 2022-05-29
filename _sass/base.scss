@@ -24,7 +24,8 @@ body {
   text-align: left;
   line-height: $base-line-height !important;
 }
-h1 {
+h1,
+h2 {
   text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
 }
 h1,
@@ -68,10 +69,10 @@ img {
 /**
 * Layout
  */
- .container {
-   width: $container-width;
-   max-width: $container-max-width;
-   margin-right: auto;
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  margin-right: auto;
   margin-left: auto;
 }
 p {
@@ -90,7 +91,7 @@ footer {
   margin: 20px auto 15px;
   padding-top: 10px;
   text-align: right;
-  .content{
+  .content {
     margin-top: 10px;
   }
 }
