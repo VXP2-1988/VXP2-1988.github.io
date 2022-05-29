@@ -55,6 +55,8 @@ a:hover {
 }
 img {
   max-width: 100%;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px rgba(219, 219, 219, 0.9);
 }
 
 @media only screen and (max-device-width: 500px) {
