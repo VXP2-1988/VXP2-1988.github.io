@@ -24,6 +24,9 @@ body {
   text-align: left;
   line-height: $base-line-height !important;
 }
+h1 {
+  text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
+}
 h1,
 h2,
 h3,
@@ -57,12 +60,12 @@ a:hover {
 }
 
 /**
- * Layout
+* Layout
  */
-.container {
-  width: $container-width;
-  max-width: $container-max-width;
-  margin-right: auto;
+ .container {
+   width: $container-width;
+   max-width: $container-max-width;
+   margin-right: auto;
   margin-left: auto;
 }
 p {
@@ -71,12 +74,19 @@ p {
   white-space: pre-wrap;
   margin-bottom: 15px;
 }
+.glowdiv {
+  border-top: var(--border);
+  box-shadow: 2px 2px 5px rgba(219, 219, 219, 0.9);
+}
 footer {
   color: var(--text-color);
-  border-top: var(--border);
+  // border-top: var(--border);
   margin: 20px auto 15px;
   padding-top: 10px;
   text-align: right;
+  .content{
+    margin-top: 10px;
+  }
 }
 header {
   margin-top: 25px;
@@ -115,11 +125,11 @@ footer {
 /**
  * Header/Navigation
  */
-.menu {
-  border-top: var(--border);
-  border-bottom: var(--border);
-  margin-bottom: 25px;
-}
+// .menu {
+//   border-top: var(--border);
+//   border-bottom: var(--border);
+//   margin-bottom: 25px;
+// }
 .menu ul {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -130,6 +140,8 @@ footer {
 .menu ul li {
   display: inline;
   margin-left: 10px;
+  text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
+  font-weight: bold;
 }
 .menu ul li a {
   text-decoration: none;
@@ -413,10 +425,14 @@ header pre {
   font-size: 10px;
   text-align: center;
   line-height: normal !important;
-  text-shadow: 1px 1px 5px white;
+  text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
 }
 @media screen and (max-width: 600px) {
   header pre {
     font-size: 5px;
   }
+}
+
+footer {
+  text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
 }
