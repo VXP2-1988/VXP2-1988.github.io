@@ -12,6 +12,24 @@
       {%- include header.html -%}
 
     <main>
+      <h2>
+        {{ page.title }}
+        <br>
+        {% if  page.tags.size > 0 %}
+        [
+        {% endif %}
+
+        {% for tag in page.tags %}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+        {% endfor %}
+
+        {% if  page.tags.size > 0 %}
+        ]
+        <br>
+        {% endif %}
+        {{ page.date | date_to_string }}
+      </h2>
       {{ content }}
     </main>
 

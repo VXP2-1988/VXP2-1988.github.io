@@ -1,17 +1,5 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}
-  <br>
-  [
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
-  {% endfor %}
-]
-</h1>
-{{ page.date | date_to_string }}
-<br/>
-<br/>
 
 {{ content }}

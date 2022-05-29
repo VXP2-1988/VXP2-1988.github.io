@@ -4,7 +4,7 @@ layout: default
 
 {% for tag_hash in site.tags %}
     {% assign my_tag = tag_hash[0] %}
-    <strong><a href="../tag/{{ my_tag }}">{{ my_tag }}</a></strong>
+    <h3><a href="../tag/{{ my_tag }}">{{ my_tag }}</a></h3>
     <ul>
         {% for post in site.tags[my_tag] %}
             <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
