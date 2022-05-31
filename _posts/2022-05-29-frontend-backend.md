@@ -3,7 +3,7 @@ layout: post
 title:  Planning the Ticketing Site
 date:   2022-05-29 11:04
 categories: 
-tags:   webdev software-eng
+tags:   webdev software-eng project-ticketing-site
 ---
 ### Requirements
 Company C wants a website with these requirements:

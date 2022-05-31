@@ -79,6 +79,7 @@ p {
 }
 .glowdiv {
   border-top: var(--border);
+  border-bottom: var(--border);
   // box-shadow: 2px 2px 5px rgba(219, 219, 219, 0.9);
 }
 footer {
@@ -218,6 +219,7 @@ textarea {
 /**
  * Code and syntax highlighting
  */
+
 .lineno {
   color: var(--code-color-1);
   margin-right: 15px;
@@ -421,7 +423,6 @@ pre {
 .highlight .il {
   color: var(--code-color-14);
 } /* Literal.Number.Integer.Long */
-
 header pre {
   margin: 0px;
   padding: 0px;
@@ -435,7 +436,10 @@ header pre {
     font-size: 5px;
   }
 }
-
-// footer {
-//   // text-shadow: 1px 1px 5px rgba(219, 219, 219, 0.9);
-// }
+main code{
+  display: block;
+  border: 1px dotted #cccccc;
+  background-color: #222222;
+  white-space: pre;
+  overflow-x: scroll;
+}
