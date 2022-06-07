@@ -10,7 +10,7 @@ Work has been busy for the past few days and I haven't had time to work on the t
 
 Additionally, I'd like to have something to deliver sooner to my client, who has expressed more interest in this project lately. Since the login, ticketing, and site data storage functions are relatively straightforward, I'll be implementing them in Flask and Jinja and leaving the more involved features for later implementation with a better frontend framework. That way I can finish this on time, deliver something with the core functionality, and get more familiarity with login systems before jumping into Vue.
 
-### Sunday, June 5 Work Summary
+### Work Summary, Sunday 
 Created a basic SQL schema to store user credentials. 
 
 Implemented a login system using Flask-Bcrypt. User passwords are salted and hashed using bcrypt, the password is never stored on server. Credentials are then stored in SQL database. The logged in user is stored in the session cookie and protected with a randomly-generated secret key. All secrets are stored as environment variables and loaded using python-dotenv.
