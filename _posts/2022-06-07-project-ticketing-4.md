@@ -5,11 +5,11 @@ date:   2022-06-07
 tags:   project-ticketing-site
 categories: 
 ---
-So far I've been working on the email functionality. Initially started off using Flask-Mail, but switched to ussing smtplib because Google kept dropping Flask-Mail's authentication requests. Gmail changed the way they handle insecure apps on May 30, which may have something to do with that. Generated a app-specific password for my dev app. 
+So far I've been working on the email functionality. Initially started off using Flask-Mail, but switched to using smtplib because Google kept dropping Flask-Mail's authentication requests. Gmail changed the way they handle insecure apps on May 30, which may have something to do with that. Generated an app-specific password for my dev app. 
 
 Spent a good while trying to figure out an issue where Google was rejecting my credentials for the new app. Turns out Flask only reloads environment variables on restart and it was still storing the old credentials, which makes sense on examination.
 
-Now I can login to my Gmail smtp server using TLS and send messages. Client has stipulated that they want a PDF copy of the invoice sent to their inbox. I also need to send an HTML copy and a backup plaintext copy as the body header.
+Now I can login to my Gmail smtp server using TLS and send messages. Client has stipulated that they want a PDF copy of the invoice sent to their inbox. I also need to send an HTML copy and a backup plaintext copy as the body.
 
 The Flask + Jinja combo has the ability to render HTML pages already. This means that I can use it to render an HTML page looking like the stored invoice, with all the invoice fields filled in. I can then use the returned rendered html and add it to the email message body. The email then appears the same way the form does on the webpage.
 
