@@ -21,3 +21,5 @@ Spent most of the day on SMTP server stuff and creating the send email functiona
 Tomorrow I'll have work but next up I need to work on automated testing, error checking, and add some error messages for the benefit of the user. The application has gotten large enough that I need to devote some time to making sure that each individual component works correctly.
 
 I'd also like to either use the client's SMTP server or use my own. Currently I'm relying on Google's and setting up my own could be an interesting task. I have a spare Raspberry Pi 2 that isn't doing anything else.
+
+Also seeing some good future applications for Vue. Invoice editing and management would best be done that way, doing too much server-side work rendering templates is asking for slowdowns and trouble. For now, I'll keep that application in mind and keep the routes clean so that I can reuse them as the backend for an SPA application.
