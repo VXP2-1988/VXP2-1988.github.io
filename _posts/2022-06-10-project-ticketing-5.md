@@ -31,3 +31,7 @@ The rest of the time I worked on getting the invoice pdf formatting up to requir
 
 ### BytesIO and StringIO
 Chalk that one up to overthinking, I guess. On closer examination it was obvious that StringIO is a string buffer, and that I was attempting to write a PDF as bytes into it. If I change StringIO to BytesIO, then it runs without errors. Good to know for the future - when I'm dealing with buffering files, use the raw data, strings are only useful if the contents are readable as strings. This is a lesson in knowing what kind of data I'm trying to read and write.
+
+The other part of the mystery is why BytesIO.read() was only outputting an empty byte string. BytesIO returns when it hits EOF, and it also keeps track of where it is in the stream. The issue was that xhtml2pdf was writing the PDF file as bytes to the buffer, but after it had written everything the current location of the pointer was the end of the file. So, when I immediately returned the BytesIO object and tried to read from it, it continued where it left off from the end of the file, saw the EOF, and returned nothing. This explains why getvalue() worked but read() didn't. The solution was to call seek(0) on the BytesIO object, which sets the offset of the pointer back at the start so the file is read from the beginning. 
+
+I'll simplify my implementation tomorrow with what I've learned.
