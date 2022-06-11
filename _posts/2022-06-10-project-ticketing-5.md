@@ -28,3 +28,6 @@ After setting some breakpoints and examining the library, I noticed that the des
 However, the debugger and documentation showed me that getvalue() was returning the bytes and data that I was interested in. That method finally allowed me to get plain bytes that I could encode and add as an attachement.
 
 The rest of the time I worked on getting the invoice pdf formatting up to requirements of my client. After removing the old and outdated inline styles they provided me and writing new ones, I now have a result they're happy with and that can be changed and extended easily to fit future requirements. Now that I have all the core functions they wanted complete, it's time for me to work on getting automated testing setup. I'd also like to revisit StringIO and BytesIO, since I don't understand why write() and read() aren't working like I expected.
+
+### BytesIO and StringIO
+Chalk that one up to overthinking, I guess. On closer examination it was obvious that StringIO is a string buffer, and that I was attempting to write a PDF as bytes into it. If I change StringIO to BytesIO, then it runs without errors. Good to know for the future - when I'm dealing with buffering files, use the raw data, strings are only useful if the contents are readable as strings. This is a lesson in knowing what kind of data I'm trying to read and write.
