@@ -1,9 +1,9 @@
 ---
-title: /
+title: VX Engineering
 layout: home
 permalink: /
 ---
 
-# Lorem ipsum
+# VX Engineering
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The VX Engineering is a non-profit, free technology organization, where the Security Research Group conducts research covering all aspects of security and privacy, including software security, system security, and privacy. Our research mainly targeted on reverse code engineering and malware code research.
