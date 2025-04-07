@@ -1,5 +1,5 @@
 ---
-title: Members
+title: /Members
 permalink: /members
 ---
 
