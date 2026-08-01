@@ -4,10 +4,9 @@
 
 header_pages:
  - index.md
- - training-programs.md
  - members.md
 
-footer: 'For any inquiries, email us at root@vx-engineering.org'
+footer: 'For any inquiries, email us at root@vx-engineering.site'
 
 #style: light # dark (default) or light
 #listen_for_clients_preferred_style: true # true or false (default)
